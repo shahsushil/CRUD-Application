@@ -3,7 +3,7 @@ const mongoose=require("mongoose")
 
 //  by promise  / schema method
 
-mongoose.connect("mongodb://127.0.0.1:27017/wd2pmJuneCrud")
+mongoose.connect(process.env.MONGO_URI)
 .then(()=>{
     console.log("Database is Successfully connected");
 })
