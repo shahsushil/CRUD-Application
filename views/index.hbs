@@ -1,0 +1,38 @@
+{{>header}}
+<title>Crud | Home</title>
+{{>navbar}}
+
+<div class="container-fluid center_div">
+    <div class="table-responsive">
+        <h5 class="footer_last">Employee Record</h5>
+        <table class="table table-bordered">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Designation</th>
+                <th>Salary</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+            {{#each data}}
+            <tr>
+                <td>{{_id}}</td>
+                <td>{{name}}</td>
+                <td>{{email}}</td>
+                <td>{{phone}}</td>
+                <td>{{dsg}}</td>
+                <td>{{salary}}</td>
+                <td>{{city}}</td>
+                <td>{{state}}</td>
+                <td><a href="/update/{{_id}}"><span class="material-symbols-outlined">edit</span></a></td>
+                <td><a href="/delete/{{_id}}"><span class="material-symbols-outlined">delete_forever</span></a></td>
+            </tr>
+            {{/each}}
+        </table>
+    </div>
+</div>
+{{>footer}}

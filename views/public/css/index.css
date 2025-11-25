@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+}
+.background{
+    background-color: rgb(117, 35, 104);
+    color: white;
+    display: flex;
+}
+.footer_last{
+    background-color: rgb(142, 34, 169);
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px; 
+}
+.center_div{
+    height: 520px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
